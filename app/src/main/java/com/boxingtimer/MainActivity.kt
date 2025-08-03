@@ -1,4 +1,4 @@
-package com.boxingtimer
+package com.sportstimer
 
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -135,7 +135,7 @@ class MainActivity : AppCompatActivity() {
         val powerManager = getSystemService(Context.POWER_SERVICE) as PowerManager
         wakeLock = powerManager.newWakeLock(
             PowerManager.PARTIAL_WAKE_LOCK,
-            "BoxingTimer::TimerWakeLock"
+            "SportsTimer::TimerWakeLock"
         )
     }
     

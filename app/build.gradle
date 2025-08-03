@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.boxingtimer'
+    namespace 'com.sportstimer'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.boxingtimer"
+        applicationId "com.sportstimer"
         minSdk 21
         targetSdk 33
         versionCode 1
