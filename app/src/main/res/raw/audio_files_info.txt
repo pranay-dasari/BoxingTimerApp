@@ -1,0 +1,16 @@
+AUDIO FILES NEEDED:
+
+Place these 3 audio files in this folder:
+
+1. single_bell.mp3 - Single bell sound (for buffer start and rest end)
+2. double_bell.mp3 - Double bell sound (for training end)  
+3. final_bell.mp3 - Final bell sound (for workout completion)
+
+The app will work without these files, but no sound will play.
+
+Download bell sounds from:
+- freesound.org (search "boxing bell")
+- zapsplat.com (free with registration)
+- Any short bell sound (1-3 seconds each)
+
+Make sure files are named exactly as listed above!

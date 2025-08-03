@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sports Timer</string>
+    <string name="training_time">Training Time (min):</string>
+    <string name="rest_time">Rest Time (sec):</string>
+    <string name="number_of_rounds">Number of Rounds:</string>
+    <string name="buffer_time">Buffer Time (sec):</string>
+    <string name="start">START</string>
+    <string name="pause">PAUSE</string>
+    <string name="resume">RESUME</string>
+    <string name="reset">RESET</string>
+    <string name="ready_to_start">Ready to Start</string>
+    <string name="buffer_time_phase">Buffer Time</string>
+    <string name="training_phase">Round %1$d - Training</string>
+    <string name="rest_phase">Rest Time</string>
+    <string name="workout_complete">Workout Complete!</string>
+</resources>

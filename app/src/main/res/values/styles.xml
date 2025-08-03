@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary_variant_dark</item>
+        <item name="colorSecondary">@color/secondary_dark</item>
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnBackground">@color/on_background_dark</item>
+        <item name="colorOnSurface">@color/on_surface_dark</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:textColorPrimary">@color/on_background_dark</item>
+        <item name="android:textColorSecondary">@color/config_text</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Start Button Style -->
+    <style name="StartButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/start_button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Control Button Style -->
+    <style name="ControlButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/control_button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <!-- Number Picker Theme -->
+    <style name="NumberPickerTheme" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/number_picker_text</item>
+        <item name="android:colorControlNormal">@color/number_picker_divider</item>
+    </style>
+
+</resources>

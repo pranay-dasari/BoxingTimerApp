@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark"
+    android:padding="8dp">
+
+    <!-- ROW 1: Timer Display (25% of screen) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/timer_background">
+
+        <TextView
+            android:id="@+id/timerDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:30"
+            android:textSize="48sp"
+            android:textColor="@color/timer_text"
+            android:fontFamily="monospace"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phaseDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready to Start"
+            android:textSize="16sp"
+            android:textColor="@color/phase_text"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <!-- ROW 2 & 3 (First Half): Configuration Section (37.5% of screen) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:background="@drawable/config_background"
+        android:padding="8dp"
+        android:layout_marginTop="4dp">
+
+        <!-- Training and Rest Time (Side by Side) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- Training Time -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Training (min)"
+                    android:textSize="12sp"
+                    android:textColor="@color/config_text"
+                    android:gravity="center" />
+
+                <NumberPicker
+                    android:id="@+id/trainingTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:theme="@style/NumberPickerTheme" />
+
+            </LinearLayout>
+
+            <!-- Rest Time -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rest (sec)"
+                    android:textSize="12sp"
+                    android:textColor="@color/config_text"
+                    android:gravity="center" />
+
+                <NumberPicker
+                    android:id="@+id/restTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:theme="@style/NumberPickerTheme" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Rounds and Buffer Time (Side by Side) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <!-- Number of Rounds -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rounds"
+                    android:textSize="12sp"
+                    android:textColor="@color/config_text"
+                    android:gravity="center" />
+
+                <NumberPicker
+                    android:id="@+id/roundsPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:theme="@style/NumberPickerTheme" />
+
+            </LinearLayout>
+
+            <!-- Buffer Time -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buffer (sec)"
+                    android:textSize="12sp"
+                    android:textColor="@color/config_text"
+                    android:gravity="center" />
+
+                <NumberPicker
+                    android:id="@+id/bufferTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:theme="@style/NumberPickerTheme" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ROW 3 (Second Half) & ROW 4: Control Buttons (37.5% of screen) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="4dp">
+
+        <!-- Main Control Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="START"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                style="@style/StartButtonStyle" />
+
+            <Button
+                android:id="@+id/pauseResumeButton"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="PAUSE"
+                android:textSize="18sp"
+                android:enabled="false"
+                style="@style/ControlButtonStyle" />
+
+        </LinearLayout>
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="RESET"
+            android:textSize="18sp"
+            style="@style/ControlButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
